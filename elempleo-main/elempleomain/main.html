@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elempleo.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .rating {
+            color: gold; /* Color de las estrellas */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elempleo.com</h1>
+        <nav>
+            <ul>
+                <li><a href="#trabajos">Ofertas Laborales</a></li>
+                <li><a href="#calificaciones">Calificaciones</a></li>
+                <li><a href="#subir-cv">Subir Hoja de Vida</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" id="logout-button" title="Salir">
+            <i class="fa fa-sign-out-alt"></i>
+        </a>
+    </header>
+
+    <main>
+        <section id="trabajos">
+            <div class="header-container">
+                <h2>Trabajos Publicados</h2>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar trabajos..." onkeyup="filterJobs()">
+                    <button id="search-button" onclick="filterJobs()"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="card-container" id="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="1.png" alt="Desarrollador Web" class="card-image">
+                            <h3>Desarrollador Full Stack</h3>
+                            <p>Se busca un desarrollador full stack con conocimientos en Node.js y Angular.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Valor a Pagar: $3500</p>
+                            <p>Años de Experiencia: 3-5 años</p>
+                            <p>Duración del Contrato: 1 año</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="2.png" alt="Diseñador Gráfico" class="card-image">
+                            <h3>Diseñador Gráfico Senior</h3>
+                            <p>Buscamos un diseñador gráfico creativo con experiencia en branding y diseño digital para proyectos innovadores.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Detalles del Trabajo</h3>
+                            <p>Valor a Pagar: $4000</p>
+                            <p>Años de Experiencia: 3-5 años</p>
+                            <p>Duración del Contrato: Proyecto de 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="3.png" alt="Gerente de Proyectos" class="card-image">
+                            <h3>Gerente de Proyectos</h3>
+                            <p>Se busca un gerente de proyectos con experiencia en metodologías ágiles y liderazgo de equipos multidisciplinarios.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Detalles del Trabajo</h3>
+                            <p>Valor a Pagar: $5000</p>
+                            <p>Años de Experiencia: 5-7 años</p>
+                            <p>Duración del Contrato: Proyecto de 2 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="4.png" alt="Analista de Datos" class="card-image">
+                            <h3>Analista de Datos</h3>
+                            <p>Se requiere un analista de datos experto en visualización y análisis de tendencias para apoyar la toma de decisiones estratégicas.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Detalles del Trabajo</h3>
+                            <p>Valor a Pagar: $4500</p>
+                            <p>Años de Experiencia: 3-5 años</p>
+                            <p>Duración del Contrato: 1 año, con posibilidad de renovación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="5.png" alt="Community Manager" class="card-image">
+                            <h3>Community Manager</h3>
+                            <p>Buscamos un community manager creativo y estratégico para gestionar comunidades en redes sociales y aumentar la interacción con los usuarios.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Detalles del Trabajo</h3>
+                            <p>Valor a Pagar: $3000</p>
+                            <p>Años de Experiencia: 2-4 años</p>
+                            <p>Duración del Contrato: Indefinido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="6.png" alt="Ventas" class="card-image">
+                            <h3>Ejecutivo de Ventas</h3>
+                            <p>Buscamos un profesional dinámico y orientado a resultados para liderar estrategias comerciales y expandir nuestra cartera de clientes.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Detalles del Trabajo</h3>
+                            <p>Valor a Pagar: $3500</p>
+                            <p>Años de Experiencia: 3-5 años</p>
+                            <p>Duración del Contrato: 1 año, con posibilidad de permanencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="calificaciones">
+            <h2 style="text-align: center;">Calificaciones de la Página</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="7.png" alt="Usuario 1" class="card-image">
+                        <div class="text-content">
+                            <h3>Jose Duarte</h3>
+                            <div class="rating">★★★★★</div>
+                            <p>Excelente plataforma para encontrar trabajo. ¡Recomendada!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="8.png" alt="Usuario 2" class="card-image">
+                        <div class="text-content">
+                            <h3>Juan Rojas</h3>
+                            <div class="rating">★★★★☆</div>
+                            <p>Me ayudaron a encontrar mi trabajo ideal. Gracias Fábrica de Talentos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="9.png" alt="Usuario 3" class="card-image">
+                        <div class="text-content">
+                            <h3>Cornelio Ramirez</h3>
+                            <div class="rating">★★★☆☆</div>
+                            <p>Un servicio muy útil, con buena selección de ofertas laborales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="10.png" alt="Usuario 4" class="card-image">
+                        <div class="text-content">
+                            <h3>Laura Roa</h3>
+                            <div class="rating">★★★★★</div>
+                            <p>La mejor experiencia de búsqueda de empleo que he tenido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="11.png" alt="Usuario 5" class="card-image">
+                        <div class="text-content">
+                            <h3>Sarah Elejalde</h3>
+                            <div class="rating">★★★★☆</div>
+                            <p>Mucho mejor que otras plataformas que he probado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="3.png" alt="Usuario 6" class="card-image">
+                        <div class="text-content">
+                            <h3>Nicolas Chaves</h3>
+                            <div class="rating">★★★☆☆</div>
+                            <p>Fácil de usar, pero con pocas ofertas en mi área.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+              
+
+
+        <section id="subir-cv">
+            <h2>Subir Hoja de Vida</h2>
+            <p>¡Completa tus datos personales y sube tu hoja de vida para aumentar tus posibilidades!</p>
+    
+            <!-- Formulario de datos personales -->
+            <form id="datos-personales">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+    
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <label for="experiencia">Experiencia:</label>
+                <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+    
+                <label for="estudios">Estudios:</label>
+                <textarea id="estudios" name="estudios" rows="4" required></textarea>
+    
+                <!-- Botón para guardar datos y abrir la ventana emergente para subir el CV -->
+                <button type="button" id="guardar-continuar" class="btn-guardar-continuar">Guardar y Continuar</button>
+            </form>
+        </section>
+    
+        <!-- Modal para subir la hoja de vida -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Subir Hoja de Vida</h3>
+                <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+                <button id="cerrar-modal" class="btn-cerrar-modal">Cerrar</button>
+                <button id="subir-cv" class="btn-subir">Subir Hoja de Vida</button>
+            </div>
+        </div>
+        <script src="main.js" defer></script>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Elempleo.com. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function filterJobs() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+
+                if (title.includes(filter) || description.includes(filter)) {
+                    card.style.display = ''; // Mostrar tarjeta
+                } else {
+                    card.style.display = 'none'; // Ocultar tarjeta
+                }
+            });
+        }
+    </script>
+</body>
+</html>
