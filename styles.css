@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box; /* Hace que el padding y el border se incluyan en el ancho y alto totales */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía de la página */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Color del texto */
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+}
+
+.container {
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espaciado dentro del contenedor */
+    width: 90%; /* Ancho del contenedor */
+    max-width: 400px; /* Ancho máximo de la tarjeta */
+}
+
+.welcome-message h1 {
+    margin-bottom: 10px; /* Margen inferior para el título */
+    font-size: 2em; /* Tamaño de fuente grande */
+}
+
+.welcome-message p {
+    margin-bottom: 30px; /* Margen inferior para el párrafo */
+    font-size: 1em; /* Tamaño de fuente normal */
+}
+
+.login-card {
+    background-color: #f8f9fa; /* Fondo gris claro para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Padding interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para la tarjeta */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.login-card:hover {
+    transform: translateY(-5px); /* Elevación al pasar el cursor */
+}
+
+.login-card h2 {
+    margin-bottom: 20px; /* Margen inferior para el encabezado de la tarjeta */
+    color: #333; /* Color oscuro para el texto */
+}
+
+label {
+    display: block; /* Bloque para etiquetas */
+    margin-bottom: 5px; /* Margen inferior para etiquetas */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Padding interno */
+    margin-bottom: 15px; /* Margen inferior para inputs */
+    border: 1px solid #ddd; /* Borde gris claro para inputs */
+    border-radius: 4px; /* Bordes redondeados para inputs */
+    background-color: white; /* Fondo blanco para inputs */
+    color: black; /* Color del texto en inputs */
+}
+
+button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Padding interno */
+    background-color: #007bff; /* Color azul para el botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados para botón */
+    cursor: pointer; /* Cambia el cursor en el hover del botón */
+    font-size: 1em; /* Tamaño de fuente del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+.links { 
+    margin-top: 15px; /* Espaciado superior para los enlaces */
+    font-size: 0.9em; /* Tamaño de fuente un poco más pequeño */
+}
+
+.links a {
+    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #0056b3; /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* El modal está oculto por defecto */
+    position: fixed; /* Posicionamiento fijo */
+    z-index: 1000; /* Encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Permitir desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+.modal-content {
+    background-color: #f8f9fa; /* Fondo gris claro para el contenido del modal */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 15% auto; /* Céntrico */
+    width: 80%; /* Ancho del modal */
+    max-width: 400px; /* Ancho máximo del modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra alrededor del modal */
+}
+
+.close {
+    color: #aaa; /* Color de la "X" de cerrar */
+    float: right; /* Alinear a la derecha */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambia de color al poner el cursor sobre "X" */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Query para Responsividad */
+@media(max-width: 500px) {
+    .welcome-message h1 {
+        font-size: 1.8em; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+    .welcome-message p, .login-card h2 {
+        font-size: 0.9em; /* Disminuir tamaño de fuente por dispositivos */
+    }
+}
+
+
+
+
+/*estilo para main */ 
+/*------------------------------------------*/
+
